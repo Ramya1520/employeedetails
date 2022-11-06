@@ -1,0 +1,28 @@
+<html>
+    <head>Employee details</head>
+    <script>src="empdetail.js"</script>
+    <h2>Employee details</h2>
+    <body>
+        <span>username:</span>
+        <input placeholder="enter first name" ><br>  <br>
+        <span>password:</span>
+        
+        <input placeholder="enter password" ><br>  <br>
+        <button onclick="myfunction()">submit</button>
+        <p> </p>
+        <p> </p>
+        <div>
+        <script>
+        function myfunction()
+        {
+            box=document.getElementsByTagName("input");
+            data=document.getElementsByTagName("p");
+            for(i=0;i<box.length;i++){
+                data[i].innerHTML=box[i].value;
+            }
+        }
+            </script>
+            </div>
+    </body>
+</html>
+    
